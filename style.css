@@ -189,12 +189,6 @@ img {
   display: block;
   max-width: 100%;
 }
-@media (max-width: 767px) {
-  img {
-    max-width: 50%;
-    margin: 0 auto;
-  }
-}
 
 h1 {
   font-size: large;
@@ -519,4 +513,46 @@ text-transform: capitalize;
     flex: 1;
     margin-right: 10px;
   }
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container form,
+  .signup-form {
+    max-width: 100%;
+  }
+  
+  .container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .form-header .image-container img {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .input-group:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .range-group input[type="range"] {
+    width: 70%;
+  }
+  
+  .casting-row {
+    flex-direction: column;
+  }
+  
+  .casting-row .input-group {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
 }
